@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mengajar_221_p_mobile/input_string.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Belajar Flutter'),
         ),
-        body: const Center(
-          child: Text("Halo Dunia"),
-        ),
+        body: const Center(child: InputString()),
       ),
     );
   }
