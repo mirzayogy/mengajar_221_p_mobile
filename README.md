@@ -11,3 +11,7 @@ Bagian kedua, kata yang sudah dipasangkan akan ditampilkan kedalam infinitie Lis
 ## Input
 
 Merupakan contoh mengelola inputan baik berupa String ataupun int, kemudian mengelolanya dalam state
+
+## Membaca API Online
+
+Merupakan contoh memanggil data dari JSON Online dan menampilkannya ke dalam Card didalam ListView
