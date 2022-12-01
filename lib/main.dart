@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mengajar_221_p_mobile/first_screen.dart';
+import 'package:mengajar_221_p_mobile/second_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,14 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Belajar Flutter'),
-        ),
-        body: const Center(
-          child: Text("Halo Dunia"),
-        ),
-      ),
+      initialRoute: FirstScreen.routeName,
+      routes: {
+        FirstScreen.routeName: (context) => const FirstScreen(),
+        SecondScreen.routeName: (context) => const SecondScreen(),
+      },
     );
   }
 }
