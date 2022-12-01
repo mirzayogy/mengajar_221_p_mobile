@@ -12,6 +12,10 @@ Bagian kedua, kata yang sudah dipasangkan akan ditampilkan kedalam infinitie Lis
 
 Merupakan contoh mengelola inputan baik berupa String ataupun int, kemudian mengelolanya dalam state
 
+## Snackbar dan navigasi
+
+Merupakan contoh memberikan GestureDetection kepada widget Text untuk menambahkan event onTap(), diimplementasikan dalam bentuk menampilkan Snackbar, Navigasi (pindah layar), dan membuka URL menggunakan dependency url_launcher
+
 ## Membaca API Online
 
 Merupakan contoh memanggil data dari JSON Online dan menampilkannya ke dalam Card didalam ListView
