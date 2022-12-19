@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mengajar_221_p_mobile/api/api_service.dart';
 
 class BagianCreate extends StatefulWidget {
   static const routeName = '/bagian_create';
@@ -9,6 +10,7 @@ class BagianCreate extends StatefulWidget {
 }
 
 class _BagianCreateState extends State<BagianCreate> {
+  String _nama = '';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,12 +26,19 @@ class _BagianCreateState extends State<BagianCreate> {
                   hintText: 'Tuliskan nama bagian baru',
                   labelText: 'Input Bagian',
                 ),
-                onChanged: (String value) {},
+                onChanged: (String value) {
+                  setState(() {
+                    _nama = value;
+                  });
+                },
               ),
               const SizedBox(height: 20),
               ElevatedButton(
                 child: const Text('Submit'),
-                onPressed: () {},
+                onPressed: () {
+                  ApiService apiService = ApiService();
+                  apiService.createBagian(_nama);
+                },
               )
             ],
           ),

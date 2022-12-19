@@ -14,4 +14,14 @@ class ApiService {
       throw Exception('gagal');
     }
   }
+
+  Future<http.Response> createBagian(String nama) async {
+    final response = await http.post(
+      Uri.parse("${baseUrl}bagian/create.php"),
+      body: jsonEncode(<String, String>{
+        'nama': nama,
+      }),
+    );
+    return response;
+  }
 }
