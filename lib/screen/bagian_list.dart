@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mengajar_221_p_mobile/api/api_service.dart';
 import 'package:mengajar_221_p_mobile/model/bagian.dart';
 import 'package:mengajar_221_p_mobile/model/bagianread.dart';
+import 'package:mengajar_221_p_mobile/screen/bagian_create.dart';
 
 class BagianList extends StatefulWidget {
   static const routeName = '/bagian_list';
@@ -51,6 +52,12 @@ class _BagianListState extends State<BagianList> {
             }
           },
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          Navigator.pushNamed(context, BagianCreate.routeName);
+        },
       ),
     );
   }

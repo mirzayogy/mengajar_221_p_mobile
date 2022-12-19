@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mengajar_221_p_mobile/screen/bagian_create.dart';
 import 'package:mengajar_221_p_mobile/screen/bagian_list.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: BagianList.routeName,
       routes: {
         BagianList.routeName: (context) => const BagianList(),
+        BagianCreate.routeName: (context) => const BagianCreate(),
       },
     );
   }
