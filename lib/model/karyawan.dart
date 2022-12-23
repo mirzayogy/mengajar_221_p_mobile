@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class Karyawan {
   String nik;
   String nama;
