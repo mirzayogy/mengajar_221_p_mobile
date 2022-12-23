@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mengajar_221_p_mobile/api/api_service.dart';
+import 'package:mengajar_221_p_mobile/model/karyawan.dart';
 
 class BagianCreate extends StatefulWidget {
   static const routeName = '/bagian_create';
@@ -38,6 +39,15 @@ class _BagianCreateState extends State<BagianCreate> {
                 onPressed: () {
                   ApiService apiService = ApiService();
                   apiService.createBagian(_nama);
+
+                  Karyawan karyawan = Karyawan(
+                      nik: '0013',
+                      nama: 'Tiga Belas',
+                      tanggalMulai: '2022-12-13',
+                      gajiPokok: 100000,
+                      statusKaryawan: 'TETAP',
+                      bagianId: 3);
+                  apiService.createKaryawan(karyawan);
                 },
               )
             ],

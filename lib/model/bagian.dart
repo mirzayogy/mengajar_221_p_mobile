@@ -4,6 +4,6 @@ class Bagian {
 
   Bagian({required this.id, required this.nama});
 
-  factory Bagian.fromJson(Map<String, dynamic> restaurant) =>
-      Bagian(id: restaurant['id'], nama: restaurant['nama']);
+  factory Bagian.fromJson(Map<String, dynamic> bagian) =>
+      Bagian(id: bagian['id'], nama: bagian['nama']);
 }
